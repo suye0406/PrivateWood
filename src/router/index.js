@@ -10,9 +10,14 @@ import BindCellPhone from '@/components/My/BindCellPhone'
 import About from '@/components/My/About'
 import Address from '@/components/My/Address'
 import Personal from '@/components/My/Personal'
+import Allset from '@/components/My/allset/allset'
+import Snitch from '@/components/My/allset/snitch/snitch'
 import Cart from '@/components/ShoppingCart/Cart'
 import Edit from '@/components/ShoppingCart/Edit'
 import Edit2 from '@/components/ShoppingCart/Edit2'
+import Details from '@/components/Details/Details'
+import ClassIfication from '@/components/ClassIfication/ClassIfication'
+
 
 Vue.use(Router)
 
@@ -82,6 +87,26 @@ export default new Router({
       path: '/edit2',
       name: 'Edit2',
       component: Edit2
+    },
+    {
+      path: '/details/:id',
+      name: 'Details',
+      component: Details
+    },
+    {
+      path: '/ification',
+      name: 'ClassIfication',
+      component: ClassIfication
+    },
+    {
+      path: '/allset',
+      name: 'Allset',
+      component: Allset
+    },
+    {
+      path: '/snitch',
+      name: 'Snitch',
+      component: Snitch
     },
   ]
 })
